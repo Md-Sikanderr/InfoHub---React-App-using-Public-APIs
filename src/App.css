@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background: linear-gradient(to right, #434343, #000000); */
+  color: white;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+/********Home page*******************************/
+.homeContainer {
+  background: linear-gradient(to right, #434343, #000000);
+  height: auto;
+}
+.homeContainer h1 {
+  font-weight: 900;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.homeContainer p {
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.items {
+  padding: 30px;
+  border: 2px solid #fff;
+}
+.items h4,
+p {
+  font-weight: 800;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.linktag {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 15px;
+  margin-top: 10px;
+  display: inline-block;
+  border: 1px solid #fff;
+}
+.linktag:hover {
+  color: orangered;
+}
+
+/********Headear css*****************************/
+.heading {
+  margin: 20px 0px;
+  font-weight: 800;
+  color: #fff;
+  font-size: 2rem;
+}
+.heading::after {
+  content: "";
+  height: 5px;
+  width: 50px;
+  margin: 0px auto;
+  display: block;
+  background-color: #fff;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.subheading {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 800;
+  margin: 0;
+}
+
+/************Weather section****************/
+.weatherCont {
+  background: linear-gradient(135deg, #1e90ff, #00bfff);
+  height: auto;
+}
+.WeatherInput {
+  padding: 30px;
+  border: 1px solid #fff;
+  display: inline-block;
+  border-radius: 20px;
+}
+.weatherCont .mainContainer {
+  background: linear-gradient(180deg, #f5f7fa6f, #e6f0fa);
+  margin-bottom: 20px;
+}
+.mainContainer h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.mainContainer p {
+  font-size: 20px;
+  font-weight: 800;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+/* Input box */
+input[type="text"] {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  /* background-color: rgba(255, 255, 255, 0.05); */
+  color: black;
+}
+
+/* Placeholder text fix */
+input::placeholder {
+  color: #000;
+  opacity: 1; /* fully visible */
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+  color: #000;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.weatherdata {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.weatherdata p {
+  margin: 0.3rem 0;
+  font-size: 1.4rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-weight: 800;
+}
+.mainContainer {
+  background-color: #ffffffcc;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+.weatherhead {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+}
+/******News Body***********************/
+.newsContainer {
+  background: linear-gradient(180deg, #1c2526, #2a3b47);
+}
+.newsbody {
+  padding: 20px;
+  border: 1px solid #fff;
+}
+.newsbody a {
+  text-decoration: none;
+  color: white;
+  padding: 8px;
+  border: 1px solid white;
+  margin: 10px 0px;
+  display: inline-block;
+  border-radius: 10px;
+}
+.newsbody a:hover {
+  color: orangered;
+}
+
+/*******Back Link********/
+.backlink {
+  text-decoration: none;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 15px;
+  margin: 20px 10px;
+  display: inline-block;
+}
+.cryptoContainer {
+  background: linear-gradient(180deg, #1c2526, #2a3b47);
+  height: auto;
+}
+.footersection {
+  background-color: #111111;
+}
+.footersection h4 {
+  font-size: 1.3rem;
+}
+.footersection li {
+  list-style: none;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+.flink {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.flink:hover {
+  color: blue;
+}
