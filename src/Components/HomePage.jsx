@@ -34,6 +34,15 @@ const HomePage = () => {
               </Link>
             </div>
           </div>
+          <div className="col-md-4 mb-3">
+            <div className="items">
+              <h4>📖 Learn About Countries</h4>
+              <p>Search and explore facts about your favorite countries.</p>
+              <Link className="linktag" to="/country">
+                Click Here
+              </Link>
+            </div>
+          </div>
           <div className="col-md-12 mt-5">
             <h3>More features are coming soon.....</h3>
           </div>
