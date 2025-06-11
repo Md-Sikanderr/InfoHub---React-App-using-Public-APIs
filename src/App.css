@@ -24,8 +24,12 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 .items {
-  padding: 30px;
-  border: 2px solid #fff;
+  padding: 25px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+.items img {
+  border-radius: 20px;
 }
 .items h4,
 p {
@@ -37,13 +41,15 @@ p {
   color: white;
   text-decoration: none;
   padding: 10px;
-  border-radius: 15px;
+  border-radius: 10px;
   margin-top: 10px;
   display: inline-block;
-  border: 1px solid #fff;
+  background: orangered;
+  font-weight: 700;
 }
 .linktag:hover {
-  color: orangered;
+  background: transparent;
+  border: 1px solid #fff;
 }
 
 /********Headear css*****************************/
@@ -71,63 +77,93 @@ p {
 }
 
 /************Weather section****************/
+/* Overall Section */
 .weatherCont {
-  background: linear-gradient(135deg, #1e90ff, #00bfff);
-  height: auto;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  min-height: 100vh;
+  padding: 2rem 1rem;
 }
-.WeatherInput {
-  padding: 30px;
-  border: 1px solid #fff;
+
+/* Backlink Button */
+.weatherCont .backlink {
   display: inline-block;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  border: 2px solid #007bff;
+  color: #007bff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.weatherCont .backlink:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Container Styling */
+.mainContainer {
+  background-color: #ffffff;
+  padding: 2rem;
   border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
-.weatherCont .mainContainer {
-  background: linear-gradient(180deg, #f5f7fa6f, #e6f0fa);
-  /* margin-bottom: 20px; */
-}
+
+/* Heading */
 .mainContainer h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 900;
-  color: #ffffff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  color: #007bff;
+  margin-bottom: 0.5rem;
 }
+
+/* Tagline */
 .mainContainer p {
-  font-size: 20px;
-  font-weight: 800;
-  color: #ffffff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #555;
 }
-/* Input box */
+
+/* Input + Button Container */
+.WeatherInput {
+  padding: 2rem 1.5rem;
+  border: 2px dashed #007bff;
+  border-radius: 15px;
+  display: inline-block;
+  background-color: #f0f8ff;
+}
+
+/* Input Field */
 input[type="text"] {
   width: 100%;
   padding: 0.75rem;
   font-size: 1rem;
   border: 1px solid #ccc;
-  border-radius: 10px;
+  border-radius: 8px;
   outline: none;
-  /* background-color: rgba(255, 255, 255, 0.05); */
-  color: black;
+  color: #333;
+  background-color: #fff;
+  margin-bottom: 1rem;
 }
 
-/* Placeholder text fix */
+/* Placeholder */
 input::placeholder {
-  color: #000;
-  opacity: 1; /* fully visible */
+  color: #888;
 }
 
+/* Focus Effect */
 input[type="text"]:focus {
   border-color: #007bff;
-  color: #000;
 }
 
+/* Button Styling */
 button {
-  margin-top: 1rem;
-  padding: 0.6rem 1.2rem;
+  padding: 0.6rem 1.5rem;
   font-size: 1rem;
-  color: white;
+  color: #fff;
   background-color: #007bff;
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -136,33 +172,29 @@ button:hover {
   background-color: #0056b3;
 }
 
+/* Weather Data Output */
 .weatherdata {
   margin-top: 2rem;
-  text-align: center;
+  padding: 1.5rem;
+  background-color: #e0f7fa;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.weatherhead {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #007bff;
+  margin-bottom: 1rem;
 }
 
 .weatherdata p {
-  margin: 0.3rem 0;
-  font-size: 1.4rem;
-  color: #ffffff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  font-weight: 800;
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
 }
-.mainContainer {
-  background-color: #ffffffcc;
-  padding: 2rem;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  width: 100%;
-}
-.weatherhead {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #ffffff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  font-weight: 700;
-}
+
 /******News Body***********************/
 .newsContainer {
   background: linear-gradient(180deg, #1c2526, #2a3b47);
@@ -197,11 +229,16 @@ button:hover {
   background: linear-gradient(180deg, #1c2526, #2a3b47);
   height: auto;
 }
+/*Footer section********************/
 .footersection {
   background-color: #111111;
 }
 .footersection h4 {
   font-size: 1.3rem;
+}
+.footersection p {
+  color: silver;
+  font-weight: lighter;
 }
 .footersection li {
   list-style: none;
@@ -209,7 +246,7 @@ button:hover {
   margin-bottom: 5px;
 }
 .flink {
-  color: white;
+  color: silver;
   text-decoration: none;
   cursor: pointer;
 }
@@ -263,6 +300,7 @@ button:hover {
 .countrySection .countrydetails {
   border: none;
   padding: 20px 0px;
-  background-color: #f5f5dc;
+  background-color: #f5f5dc66;
   border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }

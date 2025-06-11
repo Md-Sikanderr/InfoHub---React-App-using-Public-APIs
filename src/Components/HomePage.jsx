@@ -1,4 +1,8 @@
 import { Link } from "react-router-dom";
+import news from "../images/news.jpg";
+import weather from "../images/weather.jpg";
+import country from "../images/country.jpg";
+import crypto from "../images/crypto.jpg";
 const HomePage = () => {
   return (
     <section className="homeContainer">
@@ -9,6 +13,7 @@ const HomePage = () => {
         <div className="row justify-content-center mt-5">
           <div className="col-md-4 mb-3">
             <div className="items">
+              <img src={weather} className="card-img-top mb-2" />
               <h4>🌤️ Weather</h4>
               <p>Check current weather by city name.</p>
               <Link className="linktag" to="/weather">
@@ -18,6 +23,7 @@ const HomePage = () => {
           </div>
           <div className="col-md-4 mb-3">
             <div className="items">
+              <img src={news} className="card-img-top mb-2" />
               <h4>📰 News</h4>
               <p>Stay updated with latest headlines.</p>
               <Link className="linktag" to="/news">
@@ -27,6 +33,7 @@ const HomePage = () => {
           </div>
           <div className="col-md-4 mb-3">
             <div className="items">
+              <img src={crypto} className="card-img-top mb-2" />
               <h4>🚀 Track Crypto Prices</h4>
               <p>Stay updated with daily crypto prices.</p>
               <Link className="linktag" to="/crypto">
@@ -36,6 +43,7 @@ const HomePage = () => {
           </div>
           <div className="col-md-4 mb-3">
             <div className="items">
+              <img src={country} className="card-img-top mb-2" />
               <h4>📖 Learn About Countries</h4>
               <p>Search and explore facts about your favorite countries.</p>
               <Link className="linktag" to="/country">
