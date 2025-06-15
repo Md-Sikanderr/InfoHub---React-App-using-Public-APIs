@@ -27,6 +27,9 @@ const News = () => {
       </Link>
       <div className="container mt-5">
         <h2 className="text-center mb-3">📰 Latest News</h2>
+        <p className="lead text-center">
+          Updated every 24 hours · Showing top headlines in India
+        </p>
         <div className="row">
           {article.map((articles, index) => (
             <div className="col-md-4 mt-5 mb-3" key={index}>
